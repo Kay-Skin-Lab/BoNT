@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR 3D-Modell</title>
+
+  <!-- Google model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100%;
+      background: #111;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- model-viewer Tag -->
+  <model-viewer
+    src="modell.glb"
+    ios-src="modell.usdz"
+    alt="3D-AR-Modell"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    autoplay
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
