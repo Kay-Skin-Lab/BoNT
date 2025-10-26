@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>3D Animation Demo</title>
+ <!-- model-viewer laden -->
+ <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+ <style>
+   body { margin: 0; display:flex; height:100vh; align-items:center; justify-content:center; background:#111; }
+   model-viewer { width: 80vw; height: 80vh; background: #222; border-radius: 8px; }
+ </style>
+</head>
+<body>
+ <model-viewer
+   src="videoBoNT.glb"
+   alt="3D Modell mit Animation"
+   autoplay
+   camera-controls
+   exposure="1"
+   shadow-intensity="0.5"
+   ar
+   interaction-prompt="auto"
+   ios-src="">
+   <!-- Falls mehrere Animationen: name/animations-API per JS ansprechbar -->
+ </model-viewer>
+</body>
+</html>
